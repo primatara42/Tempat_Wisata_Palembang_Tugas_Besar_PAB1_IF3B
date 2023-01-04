@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
@@ -24,6 +25,28 @@
             android:text="Nama Tempat"
             android:textSize="20sp"
             android:textStyle="bold"
+            />
+
+        <ImageView
+            android:id="@+id/ic_alamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_nama"
+            android:layout_toRightOf="@id/iv_foto"
+            android:src="@drawable/iconLocation"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            tools:ignore="InvalidId" />
+
+        <TextView
+            android:id="@+id/tv_alamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ic_alamat"
+            android:layout_below="@id/tv_nama"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:text="Alamat"
             />
 
     </RelativeLayout>

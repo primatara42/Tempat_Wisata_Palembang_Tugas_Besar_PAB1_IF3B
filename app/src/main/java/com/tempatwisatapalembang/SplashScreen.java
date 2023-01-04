@@ -9,7 +9,6 @@ import android.view.WindowManager;
 
 public class SplashScreen extends AppCompatActivity
 {
-
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -27,6 +26,6 @@ public class SplashScreen extends AppCompatActivity
             startActivity(new Intent(SplashScreen.this, MainActivity.class));
             finish();
             }
-        }, 3000);
+        }, 5000);
     }
 }

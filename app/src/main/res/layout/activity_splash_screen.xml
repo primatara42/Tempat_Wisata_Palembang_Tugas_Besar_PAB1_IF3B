@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".SplashScreen"
     android:id="@+id/splash_screen"
-    android:background="@drawable/ic_launcher_background"
+    android:background="@drawable/wisatasplashscreen"
     >
 
 
