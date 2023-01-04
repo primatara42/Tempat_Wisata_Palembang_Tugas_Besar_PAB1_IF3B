@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        rvWisata = findViewById(R.id.rv_wisata);
+        //rvWisata = findViewById(R.id.rv_wisata);
         rvWisata.setHasFixedSize(true);
         list.addAll(WisataData.getListData());
     }
