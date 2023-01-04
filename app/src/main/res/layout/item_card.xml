@@ -7,112 +7,107 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="6dp"
+        android:layout_marginBottom = "50dp"
         >
+
 
         <ImageView
             android:id="@+id/iv_foto"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:src="@mipmap/ic_launcher_round" />
-        
+            android:layout_width="550px"
+            android:layout_height="350px"
+            android:src="@drawable/danau_air_batu"
+            />
+
         <TextView
             android:id="@+id/tv_nama"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@+id/iv_foto"
             android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/iv_foto"
             android:text="Nama Tempat"
             android:textSize="20sp"
-            android:textStyle="bold"
-            />
+            android:textStyle="bold" />
 
         <ImageView
             android:id="@+id/ic_alamat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/tv_nama"
-            android:layout_toRightOf="@id/iv_foto"
-            android:src="@drawable/iconLocation"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="10dp"
-            />
+            android:layout_toRightOf="@id/iv_foto"
+            android:src="@drawable/icon_location" />
 
         <TextView
             android:id="@+id/tv_alamat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/ic_alamat"
             android:layout_below="@id/tv_nama"
-            android:layout_marginTop="10dp"
             android:layout_marginLeft="15dp"
-            android:text="Alamat"
-            />
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/ic_alamat"
+            android:text="Alamat" />
 
         <ImageView
             android:id="@+id/ic_jam_operasional"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/iv_foto"
             android:layout_below="@id/ic_alamat"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="10dp"
-            android:src="@drawable/iconTime"
-            />
+            android:layout_toRightOf="@id/iv_foto"
+            android:src="@drawable/icon_time" />
 
         <TextView
             android:id="@+id/tv_jam_operasional"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/ic_jam_operasional"
             android:layout_below="@id/tv_alamat"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="5dp"
-            android:text="Jam Operasional"
-        />
+            android:layout_toRightOf="@id/ic_jam_operasional"
+            android:text="Jam Operasional" />
 
         <ImageView
             android:id="@+id/ic_tarif"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/ic_jam_operasional"
-            android:src="@drawable/iconTarif"
-            android:layout_toRightOf="@id/iv_foto"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="10dp"
-            />
+            android:layout_toRightOf="@id/iv_foto"
+            android:src="@drawable/icon_tarif" />
 
         <TextView
             android:id="@+id/tv_tarif"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/ic_tarif"
             android:layout_below="@id/tv_jam_operasional"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="5dp"
-            android:text="Tarif"
-            />
+            android:layout_toRightOf="@id/ic_tarif"
+            android:text="Tarif" />
 
         <ImageView
             android:id="@+id/ic_rating"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/iconRating"
             android:layout_below="@id/ic_tarif"
-            android:layout_toRightOf="@id/iv_foto"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="10dp"
-            />
+            android:layout_toRightOf="@id/iv_foto"
+            android:src="@drawable/icon_rating" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/ic_rating"
             android:layout_below="@id/tv_tarif"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="7dp"
-            android:text="Rating"
-            />
+            android:layout_toRightOf="@id/ic_rating"
+            android:text="Rating" />
+
+
 
     </RelativeLayout>
 

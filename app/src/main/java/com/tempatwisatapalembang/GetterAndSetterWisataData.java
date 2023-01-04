@@ -3,6 +3,7 @@ package com.tempatwisatapalembang;
 public class GetterAndSetterWisataData
 {
     private String nameWisata;
+    private int imageWisata;
     private String descWisata;
     private String alamatWisata;
     private String jamOperasional;
@@ -19,6 +20,14 @@ public class GetterAndSetterWisataData
 
     public String getDescWisata() {
         return descWisata;
+    }
+
+    public int getFotoWisata() {
+        return imageWisata;
+    }
+
+    public void setFotoWisata(int fotoWisata) {
+        this.imageWisata = fotoWisata;
     }
 
     public void setDescWisata(String descWisata) {
