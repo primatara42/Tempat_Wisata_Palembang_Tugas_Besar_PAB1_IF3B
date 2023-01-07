@@ -34,17 +34,14 @@ public class ListWisataAdapter extends RecyclerView.Adapter<ListWisataAdapter.Li
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ListViewHolder holder, int position) {
-        /*
-        GetterAndSetterWisataData wisata = listWisata.get(position);
-        Glide.with(holder.itemView.getContext())
-                .load(wisata.getFotoWisata())
-                .apply(new RequestOptions().override(55, 55))
-                .into(holder.imgWisata);
-        holder.tvName.setText(wisata.getNameWisata());
-         */
+    public void onBindViewHolder(@NonNull ListViewHolder holder, int position)
+    {
         GetterAndSetterWisataData wisata = listWisata.get(position);
         holder.tvName.setText(wisata.getNameWisata());
+        holder.tvAlamat.setText(wisata.getAlamatWisata());
+        holder.tvTarif.setText(wisata.getTarif());
+        holder.tvJamOperasional.setText(wisata.getJamOperasional());
+        holder.tvRating.setText(wisata.getRating());
         Glide.
                 with(ctx)
                 .load(wisata.getFotoWisata())
@@ -61,12 +58,16 @@ public class ListWisataAdapter extends RecyclerView.Adapter<ListWisataAdapter.Li
     class ListViewHolder extends RecyclerView.ViewHolder
     {
         ImageView imgWisata;
-        TextView tvName;
+        TextView tvName, tvAlamat, tvTarif, tvJamOperasional, tvRating;
 
         public ListViewHolder(@NonNull View itemView) {
             super(itemView);
             imgWisata = itemView.findViewById(R.id.iv_foto);
             tvName = itemView.findViewById(R.id.tv_nama);
+            tvAlamat = itemView.findViewById(R.id.tv_alamat);
+            tvTarif = itemView.findViewById(R.id.tv_tarif);
+            tvJamOperasional = itemView.findViewById(R.id.tv_jam_operasional);
+            tvRating = itemView.findViewById(R.id.tv_rating);
         }
     }
 }

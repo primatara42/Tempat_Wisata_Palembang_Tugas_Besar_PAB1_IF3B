@@ -48,6 +48,10 @@ public class WisataData
             GetterAndSetterWisataData wisata = new GetterAndSetterWisataData();
             wisata.setNameWisata(nameWisata[i]);
             wisata.setFotoWisata(imageWisata[i]);
+            wisata.setAlamatWisata(alamatWisata[i]);
+            wisata.setTarif(tarif[i]);
+            wisata.setJamOperasional(jamOperasional[i]);
+            wisata.setRating(rating[i]);
             list.add(wisata);
         }
         return list;
