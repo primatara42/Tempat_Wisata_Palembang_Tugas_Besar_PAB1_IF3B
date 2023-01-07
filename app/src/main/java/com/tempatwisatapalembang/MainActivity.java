@@ -17,14 +17,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //rvWisata = findViewById(R.id.rv_wisata);
+        rvWisata = findViewById(R.id.rv_wisata);
         rvWisata.setHasFixedSize(true);
+
         list.addAll(WisataData.getListData());
+        showRecyclerList();
     }
+
     private void showRecyclerList()
     {
         rvWisata.setLayoutManager(new LinearLayoutManager(this));
-        ListWisataAdapter listWisataAdapter = new ListWisataAdapter(list);
+        ListWisataAdapter listWisataAdapter = new ListWisataAdapter(list,MainActivity.this);
         rvWisata.setAdapter(listWisataAdapter);
     }
+
 }

@@ -4,7 +4,8 @@ import java.util.ArrayList;
 
 public class WisataData
 {
-    private static String[] nameWisata = {
+    private static String[] nameWisata =
+            {
       "Air Batu", "Air Terjun Bedegung", "Kebun Teh Pagaralam", "Danau Ranau", "Al-Qur'an Al-Akbar",
       "Danau Opi Jakabaring", "Pulau Maspari", "Goa Putri Padang Bindu Baturaja", "Tangga 2001", "Air Terjun Bidadari"
     };
@@ -21,6 +22,7 @@ public class WisataData
             GetterAndSetterWisataData wisata = new GetterAndSetterWisataData();
             wisata.setNameWisata(nameWisata[i]);
             wisata.setFotoWisata(imageWisata[i]);
+            list.add(wisata);
         }
         return list;
     }
