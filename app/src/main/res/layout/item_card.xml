@@ -39,7 +39,7 @@
             android:id="@+id/ic_alamat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp"
             android:layout_toRightOf="@id/iv_foto"
             android:layout_below="@id/tv_nama"
@@ -62,7 +62,7 @@
             android:id="@+id/ic_jam_operasional"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="30dp"
             android:layout_toRightOf="@id/iv_foto"
             android:layout_below="@id/tv_alamat"
@@ -86,7 +86,7 @@
             android:id="@+id/ic_tarif"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="30dp"
             android:layout_toRightOf="@id/iv_foto"
             android:layout_below="@id/tv_jam_operasional"
@@ -111,7 +111,7 @@
             android:id="@+id/ic_rating"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="30dp"
             android:layout_toRightOf="@id/iv_foto"
             android:layout_below="@id/tv_tarif"
@@ -136,7 +136,3 @@
 
 
 </androidx.cardview.widget.CardView>
-
-
-
-
