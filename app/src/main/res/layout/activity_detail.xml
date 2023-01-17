@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_foto_detail"
+            android:layout_width="750px"
+            android:layout_height="650px"
+            android:src="@drawable/danau_air_batu"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_nama_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_foto_detail"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="Nama Wisata"
+            />
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_nama_detail"
+            android:textSize="13dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="sans-serif"
+            android:text="
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis dictum mauris. Aliquam erat volutpat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam pulvinar, urna ac mollis varius, arcu augue pretium mauris, interdum rhoncus massa lectus eget leo. Etiam ullamcorper, ligula ut tempus varius, sapien magna feugiat metus, non consectetur nulla nibh in arcu. Proin sit amet placerat orci. Donec sed quam metus. Nam dictum sollicitudin sapien, non eleifend purus pharetra in. Mauris nec lacus velit. Sed vel nulla ac nibh pulvinar mollis ut in quam. Fusce nec lectus eget nunc elementum viverra. Nunc ac ornare dui. Cras hendrerit lobortis leo sed condimentum. Aliquam tincidunt ante nibh, eu venenatis ex hendrerit in. Curabitur magna orci, gravida id lacus vitae, hendrerit maximus ligula.
+Fusce non tristique enim. Morbi quis lectus iaculis, dapibus lacus non, molestie massa. Praesent dictum sapien odio, id aliquet diam posuere id. Nam porta placerat quam, a auctor ex maximus nec. Phasellus porttitor dolor vel cursus condimentum. Integer a imperdiet metus. Aenean consequat blandit tellus vel facilisis. Vivamus tincidunt orci venenatis dui ullamcorper pellentesque. Sed tempor feugiat est, ac fermentum odio faucibus eget. Mauris leo sapien, sagittis at purus ut, auctor suscipit ligula. Etiam congue ipsum purus, a bibendum urna tempor ut.
+Ut metus ante, euismod vitae maximus nec, volutpat lacinia velit. Sed consequat dolor eget nisl tempor, nec venenatis leo hendrerit. Donec a arcu quis quam ullamcorper facilisis non sed mauris. Praesent ultrices eros imperdiet pellentesque luctus.
+"
+            />
+
+        <Button
+            android:id="@+id/btn_lokasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_desc"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:layout_centerHorizontal="true"
+            android:text="Lihat Lokasi"
+            android:backgroundTint="@color/teal_200"
+            />
+
+    </RelativeLayout>
+
+</ScrollView>

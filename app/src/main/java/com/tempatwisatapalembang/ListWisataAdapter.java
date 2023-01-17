@@ -1,6 +1,7 @@
 package com.tempatwisatapalembang;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -47,6 +48,28 @@ public class ListWisataAdapter extends RecyclerView.Adapter<ListWisataAdapter.Li
                 .load(wisata.getFotoWisata())
                 .centerCrop()
                 .into(holder.imgWisata);
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                TextView tvDesc;
+                String xNama, xDesc, xLokasi;
+                int xFoto;
+
+                tvDesc = view.findViewById(R.id.tv_desc);
+                xNama = wisata.getNameWisata();
+                xDesc = wisata.getDescWisata();
+                xFoto = wisata.getFotoWisata();
+                xLokasi = wisata.getLokasi();
+
+                Intent kirim = new Intent(ctx, DetailActivity.class);
+                kirim.putExtra("xNama", xNama);
+                kirim.putExtra("xDesc", xDesc);
+                kirim.putExtra("xFoto", xFoto);
+                kirim.putExtra("xLokasi", xLokasi);
+                ctx.startActivity(kirim);
+            }
+        });
     }
 
     @Override
@@ -58,7 +81,7 @@ public class ListWisataAdapter extends RecyclerView.Adapter<ListWisataAdapter.Li
     class ListViewHolder extends RecyclerView.ViewHolder
     {
         ImageView imgWisata;
-        TextView tvName, tvAlamat, tvTarif, tvJamOperasional, tvRating;
+        TextView tvName, tvAlamat, tvTarif, tvJamOperasional, tvRating, tvDesc;
 
         public ListViewHolder(@NonNull View itemView) {
             super(itemView);

@@ -9,6 +9,15 @@ public class GetterAndSetterWisataData
     private String jamOperasional;
     private String tarif;
     private String rating;
+    private String lokasi;
+
+    public String getLokasi() {
+        return lokasi;
+    }
+
+    public void setLokasi(String lokasi) {
+        this.lokasi = lokasi;
+    }
 
     public String getNameWisata() {
         return nameWisata;
