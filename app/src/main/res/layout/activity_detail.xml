@@ -8,7 +8,9 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#abdbe3"
+        >
 
         <ImageView
             android:id="@+id/iv_foto_detail"
@@ -30,6 +32,7 @@
             android:textStyle="bold"
             android:textSize="20dp"
             android:text="Nama Wisata"
+            android:textColor="@color/black"
             />
 
         <TextView
@@ -40,11 +43,15 @@
             android:textSize="13dp"
             android:layout_marginBottom="10dp"
             android:fontFamily="sans-serif"
-            android:text="
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis dictum mauris. Aliquam erat volutpat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam pulvinar, urna ac mollis varius, arcu augue pretium mauris, interdum rhoncus massa lectus eget leo. Etiam ullamcorper, ligula ut tempus varius, sapien magna feugiat metus, non consectetur nulla nibh in arcu. Proin sit amet placerat orci. Donec sed quam metus. Nam dictum sollicitudin sapien, non eleifend purus pharetra in. Mauris nec lacus velit. Sed vel nulla ac nibh pulvinar mollis ut in quam. Fusce nec lectus eget nunc elementum viverra. Nunc ac ornare dui. Cras hendrerit lobortis leo sed condimentum. Aliquam tincidunt ante nibh, eu venenatis ex hendrerit in. Curabitur magna orci, gravida id lacus vitae, hendrerit maximus ligula.
-Fusce non tristique enim. Morbi quis lectus iaculis, dapibus lacus non, molestie massa. Praesent dictum sapien odio, id aliquet diam posuere id. Nam porta placerat quam, a auctor ex maximus nec. Phasellus porttitor dolor vel cursus condimentum. Integer a imperdiet metus. Aenean consequat blandit tellus vel facilisis. Vivamus tincidunt orci venenatis dui ullamcorper pellentesque. Sed tempor feugiat est, ac fermentum odio faucibus eget. Mauris leo sapien, sagittis at purus ut, auctor suscipit ligula. Etiam congue ipsum purus, a bibendum urna tempor ut.
-Ut metus ante, euismod vitae maximus nec, volutpat lacinia velit. Sed consequat dolor eget nisl tempor, nec venenatis leo hendrerit. Donec a arcu quis quam ullamcorper facilisis non sed mauris. Praesent ultrices eros imperdiet pellentesque luctus.
+            android:justificationMode="inter_word"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/black"
+            android:text=
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 "
+
             />
 
         <Button
@@ -56,7 +63,7 @@ Ut metus ante, euismod vitae maximus nec, volutpat lacinia velit. Sed consequat 
             android:layout_marginBottom="30dp"
             android:layout_centerHorizontal="true"
             android:text="Lihat Lokasi"
-            android:backgroundTint="@color/teal_200"
+            android:backgroundTint="#063970"
             />
 
     </RelativeLayout>

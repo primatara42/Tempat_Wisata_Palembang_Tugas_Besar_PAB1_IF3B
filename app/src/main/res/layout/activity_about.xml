@@ -17,6 +17,7 @@
         android:textColor="@color/white"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="50dp"
+        android:layout_marginTop="10dp"
         />
 
     <TextView
@@ -28,8 +29,8 @@
         android:textColor="@color/white"
         android:layout_marginRight="5dp"
         android:layout_marginLeft="5dp"
-        android:layout_marginBottom="50dp"
-        android:text="Nama Kelompok\t\t\t: Tempat Wisata di Sumsel\nMata Kuliah\t\t\t\t\t\t\t: Pemrograman Aplikasi Bergerak I\nKelas\t\t\t\t\t\t\t\t\t\t\t\t\t: IF3B\nDosen Pengampu\t\t: Ahmad Farisi, M.Kom."
+        android:layout_marginBottom="20dp"
+        android:text="Nama Kelompok\t\t\t\t: Tempat Wisata di Sumsel\nMata Kuliah\t\t\t\t\t\t\t\t\t: Pemrograman Aplikasi Bergerak I\nKelas\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t: IF3B\nDosen Pengampu\t\t\t: Ahmad Farisi, M.Kom."
 
         />
 
